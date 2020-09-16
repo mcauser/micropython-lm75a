@@ -40,9 +40,9 @@ Tos temperature must be greater than Thyst, otherwise the OS output is erratic.
 Power on defaults: Normal mode, OS comparator mode, Tos: 80°C, Thyst: 75°C, OS output active LOW
 
 
-#### Examples
+# Examples
 
-**Basic Usage**
+## Basic Usage
 
 ```python
 import lm75a
@@ -109,7 +109,7 @@ sensor.config(os_mode=1)
 # where it holds active again until any register is read.
 ```
 
-#### Pins
+## Pins
 
 Pin | Name | Description
 :--:|:----:|:--------------------------------
@@ -178,7 +178,7 @@ This sensor uses an I2C interface and requires pull-ups on the SDA and SCL lines
 The device can be found at addresses 0x48 through 0x4F based on address select pins A0, A1, A2.
 
 A0  | A1  | A2  | Address
-----|-----|-----|--------
+:--:|:---:|:---:|:-------:
 GND | GND | GND | 0x48
 VCC | GND | GND | 0x49
 GND | VCC | GND | 0x4A
@@ -190,9 +190,9 @@ VCC | VCC | VCC | 0x4F
 
 ## Parts
 
+* [CJMCU-75](https://www.aliexpress.com/item/32686562091.html) $0.92 AUD
 * [TinyPICO](https://www.tinypico.com/) $20.00 USD
 * [Lolin D1 Mini Pro](https://www.aliexpress.com/item/32724692514.html) $6.95 AUD
-* [CJMCU-75](https://www.aliexpress.com/item/32686562091.html) $0.92 AUD
 
 ## Connections
 
@@ -210,6 +210,7 @@ If you do not wish to use the OS output, you can leave this pin not connected an
 
 ## Links
 
+* [NXP LM75A product page](https://www.nxp.com/products/sensors/ic-digital-temperature-sensors/digital-temperature-sensor-and-thermal-watchdog:LM75A)
 * [NXP LM75A datasheet](https://www.nxp.com/docs/en/data-sheet/LM75A.pdf)
 * [micropython.org](http://micropython.org)
 * [TinyPICO Getting Started](https://www.tinypico.com/gettingstarted)
