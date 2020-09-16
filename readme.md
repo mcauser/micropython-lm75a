@@ -197,6 +197,7 @@ VCC | VCC | VCC | 0x4F
 ## Connections
 
 CJMCU-75 | TinyPICO | ESP8266
+:-------:|:--------:|:-------:
 VCC      | 3V3      | 3V3
 GND      | GND      | GND
 SDA      | GPIO21   | GPIO4
